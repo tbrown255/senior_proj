@@ -31,8 +31,8 @@ void init_adc(void)
     TRISAbits.TRISA3    = 0b1;  //AN3
     TRISAbits.TRISA5    = 0b1;  //AN4
 
-    TRISBbits.TRISB0    = 0b1;  //AN12
-    TRISBbits.TRISB1    = 0b1;  //AN10
+    TRISBbits.TRISB0    = 0b0;  //AN12 output1 for MUX control
+    TRISBbits.TRISB1    = 0b0;  //AN10 output2 for MUX control
     TRISBbits.TRISB2    = 0b1;  //AN8
     TRISBbits.TRISB3    = 0b1;  //AN9
     TRISBbits.TRISB4    = 0b1;  //TX BIT
@@ -49,7 +49,8 @@ void init_adc(void)
 
     ANSELAbits.ANSA0    = 0b0;
     ANSELB              = 0b00111111;
-    ANSELCbits.ANSC6    = 0b0;
+    ANSELBbits.ANSB0    = 0b0;  //SET B0 and B1 to digital
+    ANSELBbits.ANSB1    = 0b0;
     TXSTA1bits.SYNC     = 0b0; //clear the sync bit
     RCSTA1bits.SPEN     = 0b1; //enable EUSART to automatically set TX1 to an
                              //output
