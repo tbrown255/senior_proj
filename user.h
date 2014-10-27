@@ -12,3 +12,5 @@
 
 void InitApp(void);         /* I/O and Peripheral Initialization */
 uint16_t adc_convert(uint8_t);
+void initmux(void);
+void inittx(void);
