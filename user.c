@@ -30,7 +30,7 @@ void init_adc(void)
     TRISAbits.TRISA0    = 0b1;  //AN0
     TRISAbits.TRISA3    = 0b1;  //AN3
     TRISAbits.TRISA2    = 0b1;  //AN2
-    
+
     ANSELAbits.ANSA0    = 0b1;
     ANSELAbits.ANSA1    = 0b1;
     ANSELAbits.ANSA2    = 0b1;
@@ -57,13 +57,16 @@ void initmux(void){
 void inittx(void){
 
     TRISBbits.TRISB4    = 0b1;  //TX BIT
-    TRISCbits.TRISC6    = 0b0;  //TX1 transmission pin
-    TRISCbits.TRISC7    = 0b0;  //RX1 e pin
+
+    TRISCbits.TRISC6    = 0b1;  //TX1 transmission pin
+    TRISCbits.TRISC7    = 0b1;  //RX1 e pin
 
     ANSELCbits.ANSC6    = 0b0;
+    ANSELCbits.ANSC7    = 0b0;
     TXSTA1bits.SYNC     = 0b0; //clear the sync bit
     RCSTA1bits.SPEN     = 0b1; //enable EUSART to automatically set TX1 to an
-                               //output
+    RCSTA1bits.CREN     = 0b1;
+    //output
     TXSTA1bits.TXEN     = 0b1; //Enables transmitter circuitry
     TXSTA1bits.BRGH     = 0b0;
     BAUDCON1bits.BRG16  = 0b0;

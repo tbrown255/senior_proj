@@ -1,11 +1,13 @@
-_inittx: CODE, 544 0 56
-_ConfigureOscillator: CODE, 670 0 16
-_main: CODE, 166 0 208
-_high_isr: CODE, 8 0 472
-_InitApp: CODE, 700 0 6
-__initialization: CODE, 686 0 8
-_init_adc: CODE, 480 0 64
-_initmux: CODE, 652 0 18
-_adc_convert: CODE, 600 0 52
+_inittx: CODE, 642 0 64
+_ConfigureOscillator: CODE, 840 0 16
+_main: CODE, 166 0 204
+_high_isr: CODE, 8 0 468
+___lmul: CODE, 476 0 86
+_InitApp: CODE, 870 0 6
+__initialization: CODE, 856 0 8
+_init_adc: CODE, 706 0 64
+_initmux: CODE, 822 0 18
+_adc_convert: CODE, 770 0 52
+_wait_ms: CODE, 562 0 80
 _low_isr: CODE, 24 0 138
-Total: 1038
+Total: 1204
