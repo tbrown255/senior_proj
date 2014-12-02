@@ -1,13 +1,22 @@
-_inittx: CODE, 642 0 64
-_ConfigureOscillator: CODE, 840 0 16
-_main: CODE, 166 0 204
-_high_isr: CODE, 8 0 468
-___lmul: CODE, 476 0 86
-_InitApp: CODE, 870 0 6
-__initialization: CODE, 856 0 8
-_init_adc: CODE, 706 0 64
-_initmux: CODE, 822 0 18
-_adc_convert: CODE, 770 0 52
-_wait_ms: CODE, 562 0 80
+___ftpack: CODE, 2614 0 168
+_inittx: CODE, 3420 0 64
+_trunc: CODE, 2442 0 172
+_ConfigureOscillator: CODE, 3680 0 16
+_main: CODE, 166 0 922
+___lwtoft: CODE, 3600 0 44
+___ftadd: CODE, 1088 0 772
+_high_isr: CODE, 8 0 3160
+___lmul: CODE, 3168 0 86
+_InitApp: CODE, 3696 0 6
+__initialization: CODE, 3644 0 12
+___lwdiv: CODE, 3254 0 86
+_frexp: CODE, 2938 0 124
+_init_adc: CODE, 3484 0 64
+_initmux: CODE, 3662 0 18
+_adc_convert: CODE, 3548 0 52
+___ftmul: CODE, 1860 0 336
+_wait_ms: CODE, 3340 0 80
+___altoft: CODE, 2782 0 156
+___fttol: CODE, 2196 0 246
 _low_isr: CODE, 24 0 138
-Total: 1204
+Total: 6722

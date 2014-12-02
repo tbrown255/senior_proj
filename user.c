@@ -81,8 +81,10 @@ void inittx(void){
 uint16_t adc_convert(uint8_t channel)
 {
     ADCON0bits.CHS      = channel;  // select the given channel
+    
     ADCON0bits.GO       = 0b1;      // start the conversion
     while(ADCON0bits.DONE);         // wait for the conversion to finish
+
     return (ADRESH<<8)|ADRESL;      // return the result
 }
 void InitApp(void)
